@@ -1,0 +1,228 @@
+/*
+Nicholas Wong
+Ben Nie
+
+Helpful Dimensions:
+logo 			= 200p x 220p
+banner 			= 750p x 220p
+menu items 		= 200p x 50p
+product image	= 150p x 150p 
+
+*/
+
+div.menuItem {
+	font-size:30px;
+	margin: 15px 0 0 0;
+	/*border: solid yellow 3px;*/
+	width: 200px;
+	height: 50px;
+	background-color: #BBE7E6;
+	color: black;
+	text-align: center;
+	line-height: 50px;
+	
+}
+
+div.menuItem:hover {
+	background-color: #00b1b1;/*darkish cyan*/
+	color: #d80000; /*darkish red*/
+}
+
+.productImage {
+	position:relative;
+	margin:auto;
+	left: 5px;
+	top: 30px;
+	width:150px;
+	height:150px;
+	display: block;
+}
+	
+.productName {
+	margin-top:28px;
+	font-size:25px;
+	text-align: center;
+	
+	
+}
+
+.product {
+	position: absolute;
+	height: 225px;
+	width: 250px;
+	/*border:5px solid green;*/
+	margin: 25px 80px 0px 50px;
+}
+
+.product:hover {
+	background: #e6e6e6; /*light gray*/ 
+}
+
+.product:hover .hiddenPrice {
+	visibility: visible;
+}
+
+.hiddenPrice {
+	position:absolute;
+	color: white;
+	font-size: 20px;
+	height:30px;
+	width:150px;
+	left:55px;
+	top: 150px;
+	line-height: 30px;
+	background: #768989; /*grayish cyan*/
+	/*background:#088A85;*/ 
+	text-align:center;
+	visibility: hidden;
+}
+
+#product1 {
+	left: 0;
+	top: 0;
+}
+
+#product2 {
+	left: 250px;
+	top: 0;
+}
+
+#product3 {
+	left: 500px;
+	top: 0;
+}
+
+#product4 {
+	left: 0;
+	top: 225px;
+}
+
+#product5 {
+	left: 250px;
+	top: 225px;
+}
+
+#product6 {
+	left: 500px;
+	top: 225px;
+}
+
+#product7 {
+	left: 0;
+	top: 450px;
+}
+
+#product8 {
+	left: 250px;
+	top: 450px;
+}
+
+#product9 {
+	left: 500px;
+	top: 450px;
+}
+
+#product10 {
+	left: 0;
+	top: 675px;
+}
+
+#product11 {
+	left: 250px;
+	top: 675px;
+}
+
+#product12 {
+	left: 500px;
+	top: 675px;
+}
+
+head {
+	margin: auto;
+	width: 1000px;
+}
+
+#mainContent {
+	position:relative;
+	margin:auto;
+	width: 1000px;
+	/*border: solid yellow 3px;*/
+}
+
+#navigationMenu {
+	position: absolute;
+	margin: auto;
+	width: 200px;
+	/*border: solid brown 3px;*/
+	left: 0;
+	top: 40px;
+}
+
+#productList {
+	position: absolute;
+	margin: auto;
+	width: 800px;
+	height: 900px;
+	/*border: solid green 3px;*/
+	left: 200px;
+}
+
+#header {
+	position: relative;
+	margin: auto;
+	width: 1000px;
+	height: 220px;
+	/*border: solid red 3px;*/
+}
+
+#logo {
+	top:0;
+	left:0;
+	position: absolute;
+	/*border: solid blue 3px;*/
+}
+
+#welcomeBanner {
+	top:0;
+	left:250px;
+	position:absolute;
+	/*border: solid #6AC5AC 3px;*/
+}
+
+#oversizedName {
+	font-size: 18px;
+}
+
+#footer {
+	position: absolute;
+	font-size:25px;
+	margin: auto;
+	top: 1200px;
+    left:0px;
+	right:0;
+    height:75px;
+	line-height: 75px;
+    width:1000px;
+    background-color: #BBE7E6;
+	text-align: center;
+	color: black;
+}
+
+#contact {
+	position: absolute;
+	font-size:25px;
+	margin: auto;
+	top: 1200px;
+    left:24px;
+	right:0;
+    height:75px;
+	line-height: 75px;
+    width:1000px;
+	text-align: center;
+	color: black;
+}
+
+#contact:hover {
+	
+	color: #d80000; /*darkish red*/
+}

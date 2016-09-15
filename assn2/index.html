@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Assignment 2</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+	<script src="js/script.js"></script>
+	
+</head>
+<body onload="initPage()">
+    <div id="header">
+        <div id="logo">My Store</div>
+        <div id="welcomeBanner">Welcome To Our Online Shop</div>
+    </div>
+
+    <div id="mainContent">
+        <div id="navigationMenu">
+            <ul>
+				<li><button id = "showCart" onclick = "showCart()">Show Cart</button></li>
+                <li>All Items</li>
+                <li>Books</li>
+                <li>Clothing</li>
+                <li>Tech</li>
+                <li>Gifts</li>
+                <li>Stationary</li>
+                <li>Supplies</li>
+            </ul>
+        </div>
+        <div id="productList">
+            <ul>
+                <li id="Box1">
+					<div class="price">$10</div>
+					<div class="pricebg"> </div>	
+					<image class="cartImg" src="images/cart.png" />		
+					<button class="addCart" onclick="addToCart('Box1')">Add</button>
+					<button class="removeCart" onclick="removeFromCart('Box1')">Remove</button>
+				    <image class="product" src="images/Box1_$10.png" />	
+                    <div class="name">Box1</div>
+                </li>
+                <li>
+					<div class="price">$5</div>
+                    <image class="product" src="images/Box2_$5.png" />
+                    <div class="pricebg"> </div>	
+					<image class="cartImg" src="images/cart.png" />		
+					<button class="addCart" onclick="addToCart('Box2')">Add</button>
+					<button class="removeCart" onclick="removeFromCart('Box2')">Remove</button>
+                    <div class="name">Box2</div>
+                </li>
+                <li>
+					<div class="price">$20</div>
+                    <image class="product" src="images/Clothes1_$20.png" />
+                    <div class="pricebg"> </div>	
+					<image class="cartImg" src="images/cart.png" />		
+					<button class="addCart" onclick="addToCart('Clothes1')">Add</button>
+					<button class="removeCart" onclick="removeFromCart('Clothes1')">Remove</button>
+                    <div class="name">Clothes1</div>
+                </li>
+                <li>
+					<div class="price">$30</div>
+                    <image class="product" src="images/Clothes2_$30.png" />
+                    <div class="pricebg"> </div>	
+					<image class="cartImg" src="images/cart.png" />		
+					<button class="addCart" onclick="addToCart('Clothes2')">Add</button>
+					<button class="removeCart" onclick="removeFromCart('Clothes2')">Remove</button>
+                    <div class="name">Clothes2</div>
+                </li>
+                <li>
+					<div class="price">$50</div>
+                    <image class="product" src="images/Jeans_$50.png" />
+                    <div class="pricebg"> </div>	
+					<image class="cartImg" src="images/cart.png" />		
+					<button class="addCart" onclick="addToCart('Jeans')">Add</button>
+					<button class="removeCart" onclick="removeFromCart('Jeans')">Remove</button>
+                    <div class="name">Jeans</div>
+                </li>
+                <li>
+					<div class="price">$20</div>
+                    <image class="product" src="images/Keyboard_$20.png" />
+                    <div class="pricebg"> </div>	
+					<image class="cartImg" src="images/cart.png" />		
+					<button class="addCart" onclick="addToCart('Keyboard')">Add</button>
+					<button class="removeCart" onclick="removeFromCart('Keyboard')">Remove</button>
+                    <div class="name">Keyboard</div>
+                </li>
+                <li>
+					<div class="price">$40</div>
+                    <image class="product" src="images/KeyboardCombo_$40.png" />
+                    <div class="pricebg"> </div>	
+					<image class="cartImg" src="images/cart.png" />		
+					<button class="addCart" onclick="addToCart('KeyboardCombo')">Add</button>
+					<button class="removeCart" onclick="removeFromCart('KeyboardCombo')">Remove</button>
+                    <div class="name">KeyboardCombo</div>
+                </li>
+                <li>
+					<div class="price">$20</div>
+                    <image class="product" src="images/Mice_$20.png" />
+                    <div class="pricebg"> </div>	
+					<image class="cartImg" src="images/cart.png" />		
+					<button class="addCart" onclick="addToCart('Mice')">Add</button>
+					<button class="removeCart" onclick="removeFromCart('Mice')">Remove</button>
+                    <div class="name">Mice</div>
+                </li>
+                <li>
+					<div class="price">$350</div>
+                    <image class="product" src="images/PC1_$350.png" />
+                    <div class="pricebg"> </div>	
+					<image class="cartImg" src="images/cart.png" />		
+					<button class="addCart" onclick="addToCart('PC1')">Add</button>
+					<button class="removeCart" onclick="removeFromCart('PC1')">Remove</button>
+                    <div class="name">PC1</div>
+                </li>
+                <li>
+					<div class="price">$400</div>
+                    <image class="product" src="images/PC2_$400.png" />
+                    <div class="pricebg"> </div>	
+					<image class="cartImg" src="images/cart.png" />		
+					<button class="addCart" onclick="addToCart('PC2')">Add</button>
+					<button class="removeCart" onclick="removeFromCart('PC2')">Remove</button>
+                    <div class="name">PC2</div>
+                </li>
+                <li>
+					<div class="price">$300</div>
+                    <image class="product" src="images/PC3_$300.png" />
+                    <div class="pricebg"> </div>	
+					<image class="cartImg" src="images/cart.png" />		
+					<button class="addCart" onclick="addToCart('PC3')">Add</button>
+					<button class="removeCart" onclick="removeFromCart('PC3')">Remove</button>
+                    <div class="name">PC3</div>
+                </li>
+                <li>
+					<div class="price">$100</div>
+                    <image class="product" src="images/Tent_$100.png" />
+                    <div class="pricebg"> </div>	
+					<image class="cartImg" src="images/cart.png" />		
+					<button class="addCart" onclick="addToCart('Tent')">Add</button>
+					<button class="removeCart" onclick="removeFromCart('Tent')">Remove</button>
+                    <div class="name">Tent</div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="footer">
+        Copyright &copy;BenNick 2015 All Rights Reserved
+    </div>
+
+</body>
+</html>
