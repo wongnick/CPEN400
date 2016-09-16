@@ -9,3 +9,5 @@ Firefox. Assignment #5 however requires the use of MongoDB and Node.js. Enjoy!
 
 The progression of the assignments build towards a mock online store website. The user can
 view the prices of a list of items, add/remove products from the cart, checkout items, and more! 
+
+Click [here](http://wongnick.github.io/CPEN400/assn4/) to quickly view my assn 4 :)
